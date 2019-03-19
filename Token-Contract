@@ -3,8 +3,8 @@ pragma solidity ^0.4.25;
 // ----------------------------------------------------------------------------
 //
 //
-// Deployed to : 0x99b5787C5182aBAbF1b081e958cc5d8F648cD1af
-// Symbol      : SPRK
+// Deployed to : 0xC2260Eac14Ad3aE0F57F4F65f4A493E77067eBB2
+// Symbol      : SRK
 // Name        : SparkPoint
 // Total supply: 20000000000
 // Decimals    : 18
@@ -115,12 +115,12 @@ contract SparkPoint is ERC20Interface, Owned, SafeMath {
     // Constructor
     // ------------------------------------------------------------------------
     constructor () public {
-        symbol = "SPRK";
+        symbol = "SRK";
         name = "SparkPoint";
         decimals = 18;
         _totalSupply = 20000000000000000000000000000;
-        balances[0x99b5787C5182aBAbF1b081e958cc5d8F648cD1af] = _totalSupply;
-        emit Transfer(address(0), 0x99b5787C5182aBAbF1b081e958cc5d8F648cD1af, _totalSupply);
+        balances[0xC2260Eac14Ad3aE0F57F4F65f4A493E77067eBB2] = _totalSupply;
+        emit Transfer(address(0), 0xC2260Eac14Ad3aE0F57F4F65f4A493E77067eBB2, _totalSupply);
     }
 
 
